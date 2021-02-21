@@ -2,6 +2,12 @@
 
 A new Flutter project.
 
+# Content of DAY 13 ([Tutorial](https://www.youtube.com/watch?v=t8gd1ZmybiQ&list=PLrjrqTcKCnhTXI2GyPkaQF47inLp6LoIC&index=13))
+
+- Local Files
+- Load
+- Decode JSON
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
