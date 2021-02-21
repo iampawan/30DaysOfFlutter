@@ -2,6 +2,11 @@
 
 A new Flutter project.
 
+# Content of DAY 17 ([Tutorial](https://www.youtube.com/watch?v=1PcXcnZktKg&list=PLrjrqTcKCnhTXI2GyPkaQF47inLp6LoIC&index=17))
+
+- Beautiful UI
+- Vx
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
