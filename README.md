@@ -2,6 +2,12 @@
 
 A new Flutter project.
 
+# Content of DAY 2 ([Tutorial](https://www.youtube.com/watch?v=3Lry4TZBipg&list=PLrjrqTcKCnhTXI2GyPkaQF47inLp6LoIC&index=2))
+
+- Git
+- Dart Data Types
+- Scaffold
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
