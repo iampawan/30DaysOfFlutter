@@ -2,6 +2,12 @@
 
 A new Flutter project.
 
+# Content of DAY 6 ([Tutorial](https://www.youtube.com/watch?v=WtGQuA_Yu1E&list=PLrjrqTcKCnhTXI2GyPkaQF47inLp6LoIC&index=4))
+
+- Stateful
+- Animated Container
+- Future Delay
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
