@@ -6,7 +6,7 @@ A new Flutter project.
 
 - JSON Mapping
 - Data Class Generator
-- Progressive Indicator
+- Progress Indicator
 
 ## Getting Started
 
