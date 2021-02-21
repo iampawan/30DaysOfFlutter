@@ -2,6 +2,12 @@
 
 A new Flutter project.
 
+# Content of DAY 15 ([Tutorial](https://www.youtube.com/watch?v=x0yGtUW7YU8&list=PLrjrqTcKCnhTXI2GyPkaQF47inLp6LoIC&index=15))
+
+- JSON Mapping
+- Data Class Generator
+- Progressive Indicator
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
