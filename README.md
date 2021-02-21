@@ -2,6 +2,12 @@
 
 A new Flutter project.
 
+# Content of DAY 12 ([Tutorial](https://www.youtube.com/watch?v=oWU5SY7vPoo&list=PLrjrqTcKCnhTXI2GyPkaQF47inLp6LoIC&index=12))
+
+- ListView Builder
+- List Generate
+- Cards & Asserts
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
