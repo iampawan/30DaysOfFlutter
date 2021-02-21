@@ -2,6 +2,13 @@
 
 A new Flutter project.
 
+# Content of DAY 3 ([Tutorial](https://www.youtube.com/watch?v=z09kkOsQGOI&list=PLrjrqTcKCnhTXI2GyPkaQF47inLp6LoIC&index=3))
+
+- Functions
+- Classes
+- Routes
+- Themes & Text
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
