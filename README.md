@@ -2,6 +2,12 @@
 
 A new Flutter project.
 
+# Content of DAY 5 ([Tutorial](https://www.youtube.com/watch?v=pcjn9xs8mkk&list=PLrjrqTcKCnhTXI2GyPkaQF47inLp6LoIC&index=5))
+
+- Publish to GitHub
+- SingleChildScrollView
+- Navigator
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
