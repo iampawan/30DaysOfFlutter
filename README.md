@@ -2,6 +2,12 @@
 
 A new Flutter project.
 
+# Content of DAY 10 ([Tutorial](https://www.youtube.com/watch?v=7Jp5eHGLI1A&list=PLrjrqTcKCnhTXI2GyPkaQF47inLp6LoIC&index=10))
+
+- Models
+- AppBar Theme
+- Extracting theme
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
