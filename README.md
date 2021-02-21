@@ -2,6 +2,12 @@
 
 A new Flutter project.
 
+# Content of DAY 16 ([Tutorial](https://www.youtube.com/watch?v=K3CpuGVAFGc&list=PLrjrqTcKCnhTXI2GyPkaQF47inLp6LoIC&index=16))
+
+- GridView
+- GridTile
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
