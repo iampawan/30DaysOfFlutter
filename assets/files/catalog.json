@@ -9,22 +9,6 @@
             "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-blue-hero?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1604021661000"
         },
         {
-            "id": 2,
-            "name": "Pixel 5",
-            "desc": "Google Pixel phone 5th generation",
-            "price": 699,
-            "color": "#00ac51",
-            "image": "https://www.telstra.com.au/content/dam/tcom/lego/2020/plans-devices/mobiles/google-pixel-5/shared-google-pixel-5-black-05-900x1200.png"
-        },
-        {
-            "id": 3,
-            "name": "M1 Macbook Air",
-            "desc": "Apple Macbook air with apple silicon",
-            "price": 1099,
-            "color": "#e0bfae",
-            "image": "https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP825/macbookair.png"
-        },
-        {
             "id": 4,
             "name": "Playstation 5",
             "desc": "Sony Playstation 5th generation",
@@ -63,6 +47,22 @@
             "price": 899,
             "color": "#7c95eb",
             "image": "https://images.samsung.com/is/image/samsung/p6pim/za/galaxy-s21/gallery/za-clear-cover-galaxy-s21-5g-ef-qg991ttegww-363168624?$720_576_PNG$"
+        },
+        {
+            "id": 2,
+            "name": "Pixel 5",
+            "desc": "Google Pixel phone 5th generation",
+            "price": 699,
+            "color": "#00ac51",
+            "image": "https://cdn.shopify.com/s/files/1/0051/8301/2928/products/Pixel5Front-Reformatted_1200x1200.png?v=1605040074"
+        },
+        {
+            "id": 3,
+            "name": "M1 Macbook Air",
+            "desc": "Apple Macbook air with apple silicon",
+            "price": 1099,
+            "color": "#e0bfae",
+            "image": "https://photos5.appleinsider.com/price_guide/m1-macbook-pro-pp-header.png"
         }
     ]
 }
