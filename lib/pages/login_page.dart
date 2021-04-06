@@ -1,6 +1,9 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/core/store.dart';
 import 'package:flutter_catalog/utils/routes.dart';
+import 'package:url_launcher/link.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class LoginPage extends StatefulWidget {
@@ -98,6 +101,18 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       SizedBox(
                         height: 40.0,
+                      ),
+                      Link(
+                          // uri: Uri.parse("https://codepur.dev"),
+                          uri: Uri.parse(MyRoutes.cartRoute),
+                          target: LinkTarget.blank,
+                          builder: (context, followLink) {
+                            return ElevatedButton(
+                                onPressed: followLink,
+                                child: Text("Go to codepur"));
+                          }),
+                      SizedBox(
+                        height: 20.0,
                       ),
                       Material(
                         color: context.theme.buttonColor,
