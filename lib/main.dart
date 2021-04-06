@@ -17,27 +17,30 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var vxNavigator = VxNavigator(routes: {
+      "/": (_, __) => MaterialPage(child: LoginPage()),
+      MyRoutes.homeRoute: (_, __) => MaterialPage(child: HomePage()),
+      MyRoutes.homeDetailsRoute: (uri, _) {
+        final catalog = (VxState.store as MyStore)
+            .catalog
+            .getById(int.parse(uri.queryParameters["id"]));
+        return MaterialPage(
+            child: HomeDetailPage(
+          catalog: catalog,
+        ));
+      },
+      MyRoutes.loginRoute: (_, __) => MaterialPage(child: LoginPage()),
+      MyRoutes.cartRoute: (_, __) => MaterialPage(child: CartPage()),
+    });
+    (VxState.store as MyStore).navigator = vxNavigator;
+
     return MaterialApp.router(
       themeMode: ThemeMode.system,
       theme: MyTheme.lightTheme(context),
       darkTheme: MyTheme.darkTheme(context),
       debugShowCheckedModeBanner: false,
       routeInformationParser: VxInformationParser(),
-      routerDelegate: VxNavigator(routes: {
-        "/": (_, __) => MaterialPage(child: LoginPage()),
-        MyRoutes.homeRoute: (_, __) => MaterialPage(child: HomePage()),
-        MyRoutes.homeDetailsRoute: (uri, _) {
-          final catalog = (VxState.store as MyStore)
-              .catalog
-              .getById(int.parse(uri.queryParameters["id"]));
-          return MaterialPage(
-              child: HomeDetailPage(
-            catalog: catalog,
-          ));
-        },
-        MyRoutes.loginRoute: (_, __) => MaterialPage(child: LoginPage()),
-        MyRoutes.cartRoute: (_, __) => MaterialPage(child: CartPage()),
-      }),
+      routerDelegate: vxNavigator,
       // initialRoute: MyRoutes.loginRoute,
       // routes: {
       //   "/": (context) => LoginPage(),
