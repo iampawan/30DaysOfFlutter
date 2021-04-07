@@ -6,6 +6,7 @@ class MyStore extends VxStore {
   CatalogModel catalog;
   CartModel cart;
   VxNavigator navigator;
+  List<Item> items;
 
   MyStore() {
     catalog = CatalogModel();

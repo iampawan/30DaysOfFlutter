@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var vxNavigator = VxNavigator(routes: {
-      "/": (_, __) => MaterialPage(child: LoginPage()),
+      "/": (_, __) => MaterialPage(child: HomePage()),
       MyRoutes.homeRoute: (_, __) => MaterialPage(child: HomePage()),
       MyRoutes.homeDetailsRoute: (uri, _) {
         final catalog = (VxState.store as MyStore)
