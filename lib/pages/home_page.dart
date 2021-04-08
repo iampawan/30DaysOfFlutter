@@ -40,10 +40,12 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final MyStore store = VxState.store;
     return Scaffold(
         backgroundColor: context.canvasColor,
         floatingActionButton: FloatingActionButton(
-          onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
+          onPressed: () =>
+              store.navigator.routeManager.push(Uri.parse(MyRoutes.cartRoute)),
           backgroundColor: context.theme.buttonColor,
           child: Icon(
             CupertinoIcons.cart,

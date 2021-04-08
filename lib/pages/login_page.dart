@@ -102,18 +102,6 @@ class _LoginPageState extends State<LoginPage> {
                       SizedBox(
                         height: 40.0,
                       ),
-                      Link(
-                          // uri: Uri.parse("https://codepur.dev"),
-                          uri: Uri.parse(MyRoutes.cartRoute),
-                          target: LinkTarget.blank,
-                          builder: (context, followLink) {
-                            return ElevatedButton(
-                                onPressed: followLink,
-                                child: Text("Go to codepur"));
-                          }),
-                      SizedBox(
-                        height: 20.0,
-                      ),
                       Material(
                         color: context.theme.buttonColor,
                         borderRadius:
@@ -126,19 +114,46 @@ class _LoginPageState extends State<LoginPage> {
                             height: 50,
                             alignment: Alignment.center,
                             child: changeButton
-                                ? Icon(
-                                    Icons.done,
-                                    color: Colors.white,
-                                  )
+                                ? Icon(Icons.done, color: Colors.white)
                                 : Text(
                                     "Login",
                                     style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 18),
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
                                   ),
                           ),
                         ),
+                      ),
+                      SizedBox(
+                        height: 20.0,
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          context.vxNav.push(Uri.parse(MyRoutes.signupRoute));
+                        },
+                        style: ButtonStyle(
+                          foregroundColor: MaterialStateProperty.all(
+                            context.accentColor,
+                          ),
+                        ),
+                        child: Text("Sign Up").text.headline6(context).make(),
+                      ),
+                      Link(
+                          // uri: Uri.parse("https://codepur.dev"),
+                          uri: Uri.parse(MyRoutes.cartRoute),
+                          target: LinkTarget.blank,
+                          builder: (context, followLink) {
+                            return TextButton(
+                                onPressed: followLink,
+                                style: ButtonStyle(
+                                    foregroundColor: MaterialStateProperty.all(
+                                        context.accentColor)),
+                                child: Text("Go to codepur"));
+                          }),
+                      SizedBox(
+                        height: 20.0,
                       ),
                     ],
                   ),
