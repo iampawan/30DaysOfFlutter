@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_catalog/models/catalog.dart';
 import 'package:flutter_catalog/widgets/home_widgets/add_to_cart.dart';
 import 'package:velocity_x/velocity_x.dart';
+
+class AddIntent extends Intent {}
+
+class SubIntent extends Intent {}
+
+class ZeroIntent extends Intent {}
 
 class HomeDetailPage extends StatelessWidget {
   final Item catalog;
@@ -16,16 +23,53 @@ class HomeDetailPage extends StatelessWidget {
       backgroundColor: context.canvasColor,
       bottomNavigationBar: Container(
         color: context.cardColor,
-        child: ButtonBar(
-          alignment: MainAxisAlignment.spaceBetween,
-          buttonPadding: EdgeInsets.zero,
-          children: [
-            "\$${catalog.price}".text.bold.xl4.red800.make(),
-            AddToCart(
-              catalog: catalog,
-            ).wh(120, 50)
-          ],
-        ).p32(),
+        child: Shortcuts(
+          shortcuts: {
+            LogicalKeySet(LogicalKeyboardKey.arrowUp): AddIntent(),
+            LogicalKeySet(LogicalKeyboardKey.arrowDown): SubIntent(),
+            LogicalKeySet(LogicalKeyboardKey.digit0): ZeroIntent(),
+          },
+          child: Actions(
+            actions: {
+              AddIntent: CallbackAction<AddIntent>(
+                onInvoke: (intent) =>
+                    ChangeQuantity(catalog, catalog.quantity + 1),
+              ),
+              SubIntent: CallbackAction<SubIntent>(
+                onInvoke: (intent) =>
+                    ChangeQuantity(catalog, catalog.quantity - 1),
+              ),
+              ZeroIntent: CallbackAction<ZeroIntent>(
+                onInvoke: (intent) => ChangeQuantity(catalog, 0),
+              )
+            },
+            child: VxBuilder(
+              mutations: {ChangeQuantity},
+              builder: (context, _) {
+                print(catalog.quantity);
+                return Focus(
+                  autofocus: true,
+                  child: ButtonBar(
+                    alignment: MainAxisAlignment.spaceBetween,
+                    buttonPadding: EdgeInsets.zero,
+                    children: [
+                      "\$${catalog.totalPrice}".text.bold.xl4.red800.make(),
+                      VxStepper(
+                        key: UniqueKey(),
+                        defaultValue: catalog.quantity,
+                        onChange: (value) => ChangeQuantity(catalog, value),
+                      ),
+                      10.heightBox,
+                      AddToCart(
+                        catalog: catalog,
+                      ).wh(120, 50)
+                    ],
+                  ).p32(),
+                );
+              },
+            ),
+          ),
+        ),
       ),
       body: SafeArea(
         bottom: false,
