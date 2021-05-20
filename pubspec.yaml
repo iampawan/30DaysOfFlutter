@@ -27,13 +27,13 @@ dependencies:
   google_fonts: ^1.1.2
   url_launcher: ^6.0.3
   url_strategy: ^0.2.0
-  velocity_x: ^2.6.0
+  velocity_x: ^3.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  integration_test:
-    sdk: flutter
+  # integration_test:
+  #   sdk: flutter
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
