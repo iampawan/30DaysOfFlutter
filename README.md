@@ -1,6 +1,11 @@
-# flutter_catalog
+## flutter_catalog
 
-A new Flutter project.
+A new Flutter project. 
+
+# Content of DAY 1 ([Tutorial](https://www.youtube.com/playlist?list=PLrjrqTcKCnhTXI2GyPkaQF47inLp6LoIC))
+
+- Flutter Installation
+- First App
 
 ## Getting Started
 
