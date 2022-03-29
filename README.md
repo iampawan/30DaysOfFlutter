@@ -7,6 +7,12 @@ A new Flutter project.
 - Flutter Installation
 - First App
 
+# Content of DAY 18 ([Tutorial](https://www.youtube.com/watch?v=7EIichKmbG8&list=PLrjrqTcKCnhTXI2GyPkaQF47inLp6LoIC&index=18))
+
+- Hero Animations
+- MaterialPageRoute
+- Arc
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
