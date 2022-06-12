@@ -80,13 +80,11 @@ class _LoginPageState extends State<LoginPage> {
                           labelText: "Password",
                         ),
                         validator: (value) {
-                          if (value.isEmpty) {
-                            return "Password cannot be empty";
-                          } else if (value.length < 6) {
+                          if (value != null && value.length >= 6) {
+                            return null;
+                          } else {
                             return "Password length should be atleast 6";
                           }
-
-                          return null;
                         },
                       ),
                       SizedBox(
